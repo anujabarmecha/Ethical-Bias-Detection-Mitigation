@@ -14,22 +14,6 @@ A complete framework to detect, evaluate, and mitigate bias in machine learning 
 - 🌐 Streamlit-based frontend UI
 - ✅ Supports `aif360` and `fairlearn` libraries
 
----
-
-## 📁 Project Structure
-
-bias_fairness/
-│
-├── backend/
-│ └── api.py # FastAPI backend handling file uploads & ML processing
-│
-├── frontend/
-│ └── app.py # Streamlit app for frontend UI
-│
-├── data/ # Sample datasets
-├── requirements.txt # Dependencies
-└── README.md # You're here!
-
 
 
 ---
@@ -42,20 +26,20 @@ bias_fairness/
 git clone https://github.com/yourusername/ethical-bias-framework.git
 cd ethical-bias-framework
 ```
-2. Install Requirements
+### 2. Install Requirements
 ```
 pip install -r requirements.txt
 ```
 💡 Note: Ensure Python 3.8+ is installed. If using Windows, consider a virtual environment.
 
-3. Run Backend (FastAPI)
+### 3. Run Backend (FastAPI)
 ```
 cd backend
 uvicorn api:app --reload
 ```
 By default, the API will run at http://127.0.0.1:8000.
 
-4. Run Frontend (Streamlit)
+### 4. Run Frontend (Streamlit)
 In a new terminal:
 
 ```
@@ -63,7 +47,7 @@ cd frontend
 streamlit run app.py
 ```
 
-📂 Sample Usage
+### 📂 Sample Usage
 Upload your CSV dataset via the UI.
 
 Select the protected attribute (e.g., gender, race).
@@ -72,7 +56,7 @@ Choose fairness metrics and mitigation techniques.
 
 View results — bias reports, visualizations, and updated metrics.
 
-📊 Supported Bias Mitigation Algorithms
+### 📊 Supported Bias Mitigation Algorithms
 Preprocessing: Reweighing, Optimized Preprocessing
 
 In-processing: Adversarial Debiasing, Prejudice Remover
