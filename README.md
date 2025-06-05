@@ -30,9 +30,7 @@ bias_fairness/
 ├── requirements.txt # Dependencies
 └── README.md # You're here!
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -43,23 +41,28 @@ Edit
 ```bash
 git clone https://github.com/yourusername/ethical-bias-framework.git
 cd ethical-bias-framework
+```
 2. Install Requirements
-
+```
 pip install -r requirements.txt
+```
 💡 Note: Ensure Python 3.8+ is installed. If using Windows, consider a virtual environment.
 
 3. Run Backend (FastAPI)
-
+```
 cd backend
 uvicorn api:app --reload
+```
 By default, the API will run at http://127.0.0.1:8000.
 
 4. Run Frontend (Streamlit)
 In a new terminal:
 
-
+```
 cd frontend
 streamlit run app.py
+```
+
 📂 Sample Usage
 Upload your CSV dataset via the UI.
 
